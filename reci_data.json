@@ -1,0 +1,531 @@
+{
+  "intents": {
+    "greeting": {
+      "patterns": [
+        "\\bhi\\b",
+        "\\bhello\\b",
+        "\\bhey\\b"
+      ],
+      "responses": [
+        "Hi! I\u2019m Reci. Tell me what ingredients you have, your time limit, or what you feel like eating!"
+      ]
+    },
+    "suggest": {
+      "patterns": [
+        "\\bwhat should i cook\\b",
+        "\\bwhat to cook\\b",
+        "\\bdinner\\b",
+        "\\bmeal\\b",
+        "\\bsuggest\\b",
+        "\\brecipe\\b",
+        "\\bideas\\b",
+        "\\bhelp me cook\\b"
+      ],
+      "responses": [
+        "Tell me what ingredients,cravings (spicy/healthy/comfort/quick) or amount of time (e.g. 15 mins) you have."
+      ]
+    },
+    "bye": {
+      "patterns": [
+        "\\bbye\\b",
+        "\\bquit\\b",
+        "\\bexit\\b",
+        "\\bgoodbye\\b"
+      ],
+      "responses": [
+        "Bye! enjoy your meal \ud83d\ude04"
+      ]
+    }
+  },
+  "ingredient_aliases": {
+    "instant noodles": "noodles",
+    "maggi": "noodles",
+    "ramen": "noodles",
+    "udon": "noodles",
+    "soba": "noodles",
+    "bee hoon": "rice noodles",
+    "vermicelli": "rice noodles",
+    "rice noodle": "rice noodles",
+    "rice noodles": "rice noodles",
+    "kway teow": "rice noodles",
+    "rice": "rice",
+    "egg": "egg",
+    "eggs": "egg",
+    "chicken": "chicken",
+    "beef": "beef",
+    "tofu": "tofu",
+    "tuna": "tuna",
+    "fish": "fish",
+    "salmon": "fish",
+    "dory": "fish",
+    "cod": "fish",
+    "tilapia": "fish",
+    "prawn": "prawns",
+    "prawns": "prawns",
+    "shrimp": "prawns",
+    "shrimps": "prawns",
+    "soy sauce": "soy sauce",
+    "miso": "miso",
+    "mayo": "mayo",
+    "cheese": "cheese",
+    "tomato": "tomato",
+    "garlic": "garlic",
+    "onion": "onion",
+    "spring onion": "spring onion",
+    "scallion": "spring onion",
+    "spinach": "spinach",
+    "kimchi": "kimchi",
+    "butter": "butter",
+    "ginger": "ginger",
+    "chilli": "chilli",
+    "chili": "chilli",
+    "lemon": "lemon"
+  },
+  "recipes": [
+    {
+      "name": "Garlic Egg Noodles (10-min)",
+      "time_mins": 10,
+      "tags": [
+        "quick",
+        "comfort"
+      ],
+      "needs": [
+        "noodles",
+        "egg",
+        "garlic",
+        "soy sauce"
+      ],
+      "steps": [
+        "Boil noodles (2\u20133 mins). Reserve 2 tbsp noodle water, then drain.",
+        "Pan medium heat: 1 tbsp oil. Fry 2 minced garlic cloves (20\u201330 sec).",
+        "Add noodles + 1 tbsp soy sauce + reserved noodle water. Toss 30 sec.",
+        "Push noodles aside, scramble 1 egg in the pan, then mix through.",
+        "Taste: add pepper/chilli (optional). Serve hot."
+      ]
+    },
+    {
+      "name": "Spicy Tuna Mayo Noodles (8-min)",
+      "time_mins": 8,
+      "tags": [
+        "quick",
+        "spicy"
+      ],
+      "needs": [
+        "noodles",
+        "tuna",
+        "mayo"
+      ],
+      "steps": [
+        "Boil noodles (2\u20133 mins). Drain well.",
+        "Mix: 2 tbsp mayo + 1/2 can tuna + chilli flakes/sauce (to taste).",
+        "Toss noodles with tuna mayo mix until coated.",
+        "Optional: add soy sauce (1 tsp) if you want it saltier.",
+        "Eat immediately (best creamy)."
+      ]
+    },
+    {
+      "name": "Soy Garlic Chicken Noodles (15-min)",
+      "time_mins": 15,
+      "tags": [
+        "quick"
+      ],
+      "needs": [
+        "noodles",
+        "chicken",
+        "soy sauce",
+        "garlic"
+      ],
+      "steps": [
+        "Boil noodles (2\u20133 mins). Drain and set aside.",
+        "Slice chicken thin. Pan high: 1 tbsp oil, cook chicken 4\u20135 mins until done.",
+        "Add garlic 20 sec. Add 1.5 tbsp soy sauce + 2 tbsp water. Toss 30 sec.",
+        "Add noodles back in. Stir-fry 1\u20132 mins until coated.",
+        "Optional: add chilli. Serve."
+      ]
+    },
+    {
+      "name": "Chicken Miso Ramen (12-min)",
+      "time_mins": 12,
+      "tags": [
+        "quick",
+        "comfort"
+      ],
+      "needs": [
+        "noodles",
+        "chicken",
+        "miso",
+        "egg"
+      ],
+      "steps": [
+        "Boil noodles (2\u20133 mins). Drain and set aside.",
+        "In a bowl: mix 1 tbsp miso + 3 tbsp hot water until smooth.",
+        "Pan medium: cook sliced chicken 4\u20135 mins with 1 tbsp oil.",
+        "Pour in 1 cup water + miso mix. Simmer 2 mins.",
+        "Add noodles. Optional: crack in egg and poach 2\u20133 mins. Serve."
+      ]
+    },
+    {
+      "name": "Garlic Butter Prawns Noodles (12-min)",
+      "time_mins": 12,
+      "tags": [
+        "quick",
+        "comfort"
+      ],
+      "needs": [
+        "noodles",
+        "prawns",
+        "garlic",
+        "butter"
+      ],
+      "steps": [
+        "Boil noodles (2\u20133 mins). Reserve 2 tbsp noodle water, drain.",
+        "Pan medium-high: melt 1 tbsp butter. Add garlic 20 sec.",
+        "Add prawns, cook 2\u20133 mins until pink.",
+        "Add noodles + reserved noodle water. Toss 1 min to coat.",
+        "Optional: squeeze lemon. Serve hot."
+      ]
+    },
+    {
+      "name": "Egg Fried Rice (12-min)",
+      "time_mins": 12,
+      "tags": [
+        "quick",
+        "comfort"
+      ],
+      "needs": [
+        "rice",
+        "egg",
+        "soy sauce",
+        "garlic"
+      ],
+      "steps": [
+        "Use cold rice (best). If hot rice, spread on plate 3 mins to dry.",
+        "Pan high heat: 1 tbsp oil. Scramble 2 eggs, remove.",
+        "Add garlic (1\u20132 cloves) 20 sec, then add rice. Fry 2\u20133 mins.",
+        "Add 1 tbsp soy sauce + pepper. Return egg, mix 30 sec.",
+        "Optional: frozen peas/corn 2 mins. Serve."
+      ]
+    },
+    {
+      "name": "Kimchi Egg Rice (10-min)",
+      "time_mins": 10,
+      "tags": [
+        "spicy",
+        "quick"
+      ],
+      "needs": [
+        "rice",
+        "egg",
+        "kimchi"
+      ],
+      "steps": [
+        "Pan medium: 1 tbsp oil. Fry kimchi 2 mins.",
+        "Add rice, stir-fry 2\u20133 mins.",
+        "Push aside, scramble 1 egg, mix in.",
+        "Optional: soy sauce 1 tsp.",
+        "Serve hot."
+      ]
+    },
+    {
+      "name": "Chicken Rice Bowl (15-min)",
+      "time_mins": 15,
+      "tags": [
+        "quick"
+      ],
+      "needs": [
+        "rice",
+        "chicken",
+        "soy sauce",
+        "garlic"
+      ],
+      "steps": [
+        "Slice chicken thin. Pan medium-high: 1 tbsp oil. Cook chicken 5\u20136 mins.",
+        "Add garlic 20 sec, then 1.5 tbsp soy sauce + 2 tbsp water. Simmer 1 min.",
+        "Warm rice (microwave 1\u20132 mins).",
+        "Top rice with soy-garlic chicken and sauce.",
+        "Optional: add spring onion/chilli. Serve."
+      ]
+    },
+    {
+      "name": "Tuna Mayo Rice Bowl (5-min, No-Cook)",
+      "time_mins": 5,
+      "tags": [
+        "quick"
+      ],
+      "needs": [
+        "rice",
+        "tuna",
+        "mayo"
+      ],
+      "steps": [
+        "Drain canned tuna.",
+        "Mix: tuna + 1\u20132 tbsp mayo + pepper (optional).",
+        "Warm rice if needed.",
+        "Top rice with tuna mix.",
+        "Optional: add soy sauce drizzle + spring onion."
+      ]
+    },
+    {
+      "name": "Prawn Fried Rice (15-min)",
+      "time_mins": 15,
+      "tags": [
+        "quick"
+      ],
+      "needs": [
+        "rice",
+        "prawns",
+        "egg",
+        "garlic",
+        "soy sauce"
+      ],
+      "steps": [
+        "Pan high: 1 tbsp oil. Cook prawns 2\u20133 mins, remove.",
+        "Scramble 1\u20132 eggs, remove.",
+        "Add garlic 20 sec, then add rice. Stir-fry 2\u20133 mins.",
+        "Add 1 tbsp soy sauce, return prawns + egg. Toss 1 min.",
+        "Optional: spring onion on top. Serve."
+      ]
+    },
+    {
+      "name": "Quick Bee Hoon Stir-Fry (15-min)",
+      "time_mins": 15,
+      "tags": [
+        "quick",
+        "comfort"
+      ],
+      "needs": [
+        "rice noodles",
+        "egg",
+        "garlic",
+        "soy sauce"
+      ],
+      "steps": [
+        "Soak rice noodles in hot water 3\u20135 mins until soft, then drain well.",
+        "Pan medium-high: 1 tbsp oil. Fry garlic 20 sec.",
+        "Add noodles + 1 tbsp soy sauce + 2 tbsp water. Toss 1\u20132 mins.",
+        "Push aside, scramble 1 egg, mix through.",
+        "Optional: add chilli/spring onion. Serve."
+      ]
+    },
+    {
+      "name": "Garlic Prawns Bee Hoon (12-min)",
+      "time_mins": 12,
+      "tags": [
+        "quick"
+      ],
+      "needs": [
+        "rice noodles",
+        "prawns",
+        "garlic",
+        "soy sauce"
+      ],
+      "steps": [
+        "Soak rice noodles in hot water 3\u20135 mins. Drain well.",
+        "Pan medium-high: 1 tbsp oil. Add garlic 20 sec.",
+        "Add prawns, cook 2\u20133 mins until pink.",
+        "Add noodles + 1 tbsp soy sauce + 2 tbsp water. Toss 1\u20132 mins.",
+        "Optional: spring onion. Serve."
+      ]
+    },
+    {
+      "name": "Ginger Fish Bee Hoon Soup (15-min)",
+      "time_mins": 15,
+      "tags": [
+        "healthy",
+        "comfort"
+      ],
+      "needs": [
+        "rice noodles",
+        "fish",
+        "ginger"
+      ],
+      "steps": [
+        "Soak rice noodles 3\u20135 mins, drain.",
+        "Boil 2 cups water. Add sliced ginger. Simmer 3 mins.",
+        "Add fish pieces. Simmer 4\u20135 mins until cooked.",
+        "Add rice noodles and heat 1 min.",
+        "Optional: add soy sauce to taste. Serve hot."
+      ]
+    },
+    {
+      "name": "Honey Soy Chicken (18-min, One-Pan)",
+      "time_mins": 18,
+      "tags": [
+        "quick",
+        "comfort"
+      ],
+      "needs": [
+        "chicken",
+        "soy sauce",
+        "garlic"
+      ],
+      "steps": [
+        "Mix sauce: 1.5 tbsp soy sauce + 1 tbsp honey/sugar + 3 tbsp water.",
+        "Pan medium-high: 1 tbsp oil. Cook chicken 3 mins per side.",
+        "Add garlic 20 sec, pour sauce in.",
+        "Reduce heat, simmer 6\u20138 mins until glossy and cooked through.",
+        "Serve with rice/noodles."
+      ]
+    },
+    {
+      "name": "Spicy Garlic Chicken Stir-Fry (15-min)",
+      "time_mins": 15,
+      "tags": [
+        "spicy",
+        "quick"
+      ],
+      "needs": [
+        "chicken",
+        "garlic",
+        "soy sauce",
+        "chilli"
+      ],
+      "steps": [
+        "Slice chicken thin. Pan high: 1 tbsp oil. Cook chicken 5\u20136 mins.",
+        "Add garlic 20 sec + chilli (to taste).",
+        "Add 1 tbsp soy sauce + 2 tbsp water. Toss 1 min.",
+        "Optional: add onion for 1\u20132 mins.",
+        "Serve with rice/noodles."
+      ]
+    },
+    {
+      "name": "Soy Ginger Pan-Fried Fish (12-min)",
+      "time_mins": 12,
+      "tags": [
+        "quick",
+        "healthy"
+      ],
+      "needs": [
+        "fish",
+        "soy sauce",
+        "ginger"
+      ],
+      "steps": [
+        "Pat fish dry. Pan medium-high: 1 tbsp oil.",
+        "Cook fish 3\u20134 mins per side (until flaky).",
+        "Add sliced ginger 20\u201330 sec.",
+        "Add 1 tbsp soy sauce + 2 tbsp water. Simmer 1 min.",
+        "Serve with rice/noodles."
+      ]
+    },
+    {
+      "name": "Garlic Butter Fish (12-min)",
+      "time_mins": 12,
+      "tags": [
+        "quick",
+        "comfort"
+      ],
+      "needs": [
+        "fish",
+        "garlic",
+        "butter",
+        "lemon"
+      ],
+      "steps": [
+        "Pat fish dry. Pan medium-high: 1 tbsp oil. Cook fish 3\u20134 mins per side.",
+        "Lower heat. Add 1 tbsp butter + garlic 20 sec.",
+        "Spoon butter over fish for 30\u201360 sec.",
+        "Optional: squeeze lemon.",
+        "Serve with rice/noodles."
+      ]
+    },
+    {
+      "name": "Honey Garlic Prawns (10-min)",
+      "time_mins": 10,
+      "tags": [
+        "quick"
+      ],
+      "needs": [
+        "prawns",
+        "garlic",
+        "soy sauce"
+      ],
+      "steps": [
+        "Mix sauce: 1 tbsp soy sauce + 1 tbsp honey/sugar + 2 tbsp water.",
+        "Pan medium-high: 1 tbsp oil. Add garlic 20 sec.",
+        "Add prawns, cook 2\u20133 mins until pink.",
+        "Pour sauce, toss 1\u20132 mins until glossy.",
+        "Serve with rice/noodles."
+      ]
+    },
+    {
+      "name": "Prawn Omelette Rice (12-min)",
+      "time_mins": 12,
+      "tags": [
+        "quick",
+        "comfort"
+      ],
+      "needs": [
+        "prawns",
+        "egg",
+        "onion",
+        "rice"
+      ],
+      "steps": [
+        "Chop onion. Pan medium: 1 tbsp oil. Cook prawns 2 mins, add onion 1 min.",
+        "Beat 2\u20133 eggs, pour in. Cook 2\u20133 mins until set.",
+        "Flip or fold, cook 1 min more.",
+        "Warm rice.",
+        "Serve omelette over rice."
+      ]
+    },
+    {
+      "name": "Honey Soy Beef Stir-Fry (15-min)",
+      "time_mins": 15,
+      "tags": [
+        "quick"
+      ],
+      "needs": [
+        "beef",
+        "soy sauce",
+        "garlic"
+      ],
+      "steps": [
+        "Slice beef thin. Mix sauce: 1 tbsp soy sauce + 1 tbsp honey/sugar + 2 tbsp water.",
+        "Pan high: 1 tbsp oil. Sear beef 2\u20133 mins until browned.",
+        "Add garlic 20 sec, pour sauce. Simmer 2\u20133 mins until glossy.",
+        "Optional: add onion/spinach last 1\u20132 mins.",
+        "Serve with rice or noodles."
+      ]
+    },
+    {
+      "name": "Tomato Cheese Pasta (18-min)",
+      "time_mins": 18,
+      "tags": [
+        "comfort"
+      ],
+      "needs": [
+        "pasta",
+        "tomato",
+        "cheese",
+        "garlic"
+      ],
+      "steps": [
+        "Boil pasta (follow pack time). Reserve 1/4 cup pasta water.",
+        "Pan medium: 1 tbsp oil. Fry garlic 20 sec.",
+        "Add chopped tomato (or tomato sauce). Cook 4\u20135 mins until soft.",
+        "Add pasta + reserved water. Toss until saucy.",
+        "Top cheese, melt 1 min. Serve."
+      ]
+    },
+    {
+      "name": "Tofu Soy Bowl (12-min)",
+      "time_mins": 12,
+      "tags": [
+        "healthy"
+      ],
+      "needs": [
+        "tofu",
+        "soy sauce",
+        "garlic"
+      ],
+      "steps": [
+        "Pat tofu dry, cube it.",
+        "Pan medium-high: 1 tbsp oil. Brown tofu 6\u20138 mins, turning.",
+        "Add garlic 20 sec, then 1 tbsp soy sauce + 2 tbsp water.",
+        "Simmer 1\u20132 mins until coated.",
+        "Serve with rice/noodles + optional cucumber."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "greeting": {
+    "patterns": [
+      "\\\\bhi\\\\b",
+      "\\\\bhello\\\\b",
+      "\\\\bhey\\\\b"
+    ],
+    "responses": [
+      "Hi! I\u2019m Reci Tell me what ingredients you have, your craving, or time limit (e.g., 'chicken 15 mins spicy').",
+      "Hello! What are we cooking tonight? Share ingredients or what you feel like eating."
+    ]
+  },
+  "suggest": {
+    "patterns": [
+      "\\\\bwhat\\\\s+should\\\\s+i\\\\s+cook\\\\b",
+      "\\\\bwhat\\\\s+to\\\\s+cook\\\\b",
+      "\\\\bdinner\\\\b",
+      "\\\\bmeal\\\\b",
+      "\\\\bsuggest\\\\b"
+    ],
+    "responses": [
+      "Tell me: 1) ingredients 2) time (mins) 3) craving (spicy/healthy/comfort/quick) 4) diet (halal/vegan/etc).",
+      "I can help! What ingredients do you have and how much time do you have?"
+    ]
+  },
+  "diet": {
+    "patterns": [
+      "\\\\bhalal\\\\b",
+      "\\\\bvegan\\\\b",
+      "\\\\bvegetarian\\\\b",
+      "\\\\bno\\\\s+pork\\\\b",
+      "\\\\bgluten\\\\s*[- ]?free\\\\b"
+    ],
+    "responses": [
+      "Noted: {diet}. What ingredients do you have?",
+      "Okay! Diet = {diet}. Any cravings (spicy/healthy/comfort)?"
+    ]
+  },
+  "time": {
+    "patterns": [
+      "\\\\b(\\\\d{1,3})\\\\s*(?:min|mins|minute|minutes)\\\\b",
+      "\\\\bquick\\\\b",
+      "\\\\bfast\\\\b"
+    ],
+    "responses": [
+      "Nice \u2014 {minutes} mins. What ingredients do you have?",
+      "Got it, {minutes} mins. Any cravings (spicy/healthy/comfort)?"
+    ]
+  },
+  "ingredients": {
+    "patterns": [
+      "\\\\bi have\\\\b",
+      "\\\\bingredients\\\\b",
+      "\\\\bfridge\\\\b",
+      "\\\\bgot\\\\b"
+    ],
+    "responses": [
+      "Nice! I spotted: {ingredients}. Want spicy/healthy/comfort?",
+      "Okay, ingredients: {ingredients}. How many minutes do you have?"
+    ]
+  },
+  "craving": {
+    "patterns": [
+      "\\\\bspicy\\\\b",
+      "\\\\bhealthy\\\\b",
+      "\\\\bcomfort\\\\b",
+      "\\\\bcheap\\\\b",
+      "\\\\bquick\\\\b",
+      "\\\\bcrispy\\\\b",
+      "\\\\blight\\\\b"
+    ],
+    "responses": [
+      "Craving = {craving}. How many minutes do you have?",
+      "Got it: {craving}. What ingredients are you using?"
+    ]
+  },
+  "bye": {
+    "patterns": [
+      "\\\\bbye\\\\b",
+      "\\\\bexit\\\\b",
+      "\\\\bquit\\\\b",
+      "\\\\bgoodbye\\\\b"
+    ],
+    "responses": [
+      "Bye! Hope your meal turns out amazing \ud83d\ude04",
+      "Goodbye! Come back if you want more dinner ideas."
+    ]
+  }
+}
